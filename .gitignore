@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Створіть собі цей файл  і впишіть туди посилання на pull-requests зі своїм кодом
+pull-requests.txt
