@@ -1,6 +1,6 @@
 .about {
   width: 100%;
-  min-height: 220px;
+  min-height: 320px;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url('../img/about/usegreencolor.jpg') center/cover no-repeat;
   display: flex;
