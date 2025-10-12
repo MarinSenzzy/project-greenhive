@@ -3,13 +3,18 @@
   padding: 32px 0;
 }
 
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
 .gallery-text-container {
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
   gap: 16px;
-  margin-bottom: 32px;
 }
 
 .gallery-heading {
@@ -46,34 +51,39 @@ img {
 /* Styles for Tablet devices */
 
 @media only screen and (min-width: 768px) {
+  .gallery {
+    padding: 64px 0;
+  }
+
   .gallery-content-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
     gap: 24px;
-    border-radius: 32px;
+  }
+
+  .gallery-container-img-4 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .gallery-container-img-3 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+  }
+
+  .gallery-container-img-2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
   }
 
   .gallery-container-img-1 {
-    grid-row: 1 / 2; /* lewa, górna - małe */
-    grid-column: 1 / 2;
-  }
-  .gallery-container-img-2 {
-    grid-row: 1 / 3; /* prawa, wyższe */
     grid-column: 2 / 3;
-  }
-  .gallery-container-img-3 {
-    grid-row: 3 / 3; /* lewa, dolna - duże */
-    grid-column: 1 / 3;
-  }
-  .gallery-container-img-4 {
-    grid-row: 3 / 3; /* prawa, dolna - małe */
-    grid-column: 2 / 3;
+    grid-row: 3 / 4;
   }
 
   .gallery-content-container > div {
     width: 100%;
-    height: 100%;
     overflow: hidden;
     border-radius: 24px;
     display: flex;
@@ -85,12 +95,63 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
     border-radius: 24px;
+    display: block;
   }
 }
 
 /* Styles for Desktop devices */
 
 @media only screen and (min-width: 1440px) {
+  .gallery-heading {
+    font-size: 48px;
+  }
+
+  .gallery-text-container {
+    gap: 24px;
+  }
+
+  .gallery-content-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 24px;
+  }
+
+  .gallery-container-img-4 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .gallery-container-img-3 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+  }
+
+  .gallery-container-img-2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+  }
+
+  .gallery-container-img-1 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .gallery-content-container > div {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .gallery-content-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+    display: block;
+  }
 }
