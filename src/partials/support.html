@@ -1,3 +1,46 @@
-<section>
-    <h2>support</h2>
+<section class="support section">
+    <div class="container container-support">
+        <h2 class="suppert-logo">Залишились питання? Зв'яжіться з нами!</h2>
+        <p class="suppert-text">Ми тут, щоб допомогти!</p>
+
+        <form class="modal-form">
+            <!-- Name -->
+            <div class="form-field">
+                <label for="user-name" class="modal-input-label">Ім'я</label>
+                <input type="text" class="modal-input" placeholder="Іван" name="user-name" id="user-name" required />
+            </div>
+
+            <!-- Email -->
+            <div class="form-field">
+                <label for="user-email" class="modal-input-label">Електронна пошта</label>
+                <input type="email" class="modal-input" placeholder="hello@ecotote.com" name="user-email"
+                    id="user-email" required />
+            </div>
+
+            <!-- Message -->
+            <div class="form-field">
+                <label for="user-message" class="modal-input-label">Повідомлення</label>
+                <textarea class="modal-text-input" placeholder="Введіть своє повідомлення..." name="user-message"
+                    id="user-message" rows="4"></textarea>
+            </div>
+            <!-- Submit -->
+            <button type="submit" class="modal-submit">Надіслати</button>
+        </form>
+        <!-- Кнопка -->
+        <button class="submit-btn">Надіслати</button>
+
+        <!-- Адаптивне зображення після кнопки -->
+        <picture class="form-image">
+            <!-- Мобільна версія -->
+            <source srcset="img/form-image-mobile-1x.png 1x, img/form-image-mobile-2x.png 2x"
+                media="(max-width: 767px)">
+
+            <!-- Планшет -->
+            <source srcset="img/form-image-tablet-1x.png 1x, img/form-image-tablet-2x.png 2x"
+                media="(min-width: 768px) and (max-width: 1157px)">
+
+            <!-- Десктоп -->
+            <source srcset="../img/support/ 1x, img/form-image-desktop-2x.png 2x" media="(min-width: 1158px)">
+        </picture>
+    </div>
 </section>
