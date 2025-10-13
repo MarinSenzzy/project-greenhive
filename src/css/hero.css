@@ -39,7 +39,20 @@
     border-radius: 6px;
     padding: 12px 0;
     background: #030a06;
+    transition: opacity 0.3s ease;
 }
+
+.hero-btn:hover,
+.hero-btn:focus {
+    opacity: 0.5;
+}
+
+
+.hero-btn:active {
+    background: #113916;
+    opacity: 0.6;
+}
+
 
 .hero-img {
     border-radius: 40px;
