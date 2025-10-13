@@ -1,5 +1,5 @@
 .assortment {
-  padding: 32px 0;
+  
 }
 
 .assortment__title {
@@ -91,7 +91,7 @@
   }
   .assortment__item {
     width: calc((100% - 24px) / 2);
-    max-width: 340px;
+    
   }
 }
 
@@ -104,6 +104,6 @@
   }
   .assortment__item {
     width: calc((100% - 72px) / 4);
-    max-width: 310px;
+    
   }
 }
