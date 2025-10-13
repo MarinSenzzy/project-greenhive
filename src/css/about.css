@@ -21,7 +21,7 @@
   line-height: 120%;
   letter-spacing: 0.01em;
   color: #ffffff;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 .about-subtitle {
   font-family: 'Fira Sans', sans-serif;
@@ -29,7 +29,7 @@
   font-size: 16px;
   line-height: 1.5;
   color: #ffffff;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 }
 .about-text {
   font-family: 'Fira Sans', sans-serif;
@@ -48,9 +48,13 @@
   }
   .about-title {
     font-size: 48px;
+    margin-bottom: 24px;
   }
   .about-text {
     font-size: 18px;
+  }
+  .about-subtitle {
+    margin-bottom: 16px;
   }
 }
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
@@ -67,6 +71,8 @@
   }
   .about-title {
     font-size: 56px;
+    max-width: 629px;
+    margin: 0 auto 24px;
   }
 }
 @media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
