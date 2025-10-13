@@ -77,13 +77,28 @@ h2 {
 
 .modal-text-input {
     height: 180px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #030a06;
+}
+
+.modal-input:focus,
+.modal-text-input:focus {
+    color: #030a06;
+}
+
+
+.modal-input:invalid,
+.modal-text-input:invalid {
+    color: #d64040;
 }
 
 .modal-input-label {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
-    color: #030a06;
+    background: rgba(3, 10, 6, 0.05);
 }
 
 .modal-input::placeholder,
@@ -106,6 +121,21 @@ h2 {
     height: 50px;
     cursor: pointer;
     background-color: #030a06;
+}
+
+.submit-btn:hover .submit-btn:focus {
+    background: #030a06;
+    opacity: 0.5;
+}
+
+.submit-btn:active {
+    background: #113916;
+    opacity: 0.6;
+}
+
+.submit-btn:disabled {
+    background: #030a06;
+    opacity: 0.2;
 }
 
 /* Зображення */
