@@ -1,22 +1,39 @@
-.support {}
+.support {
+    background: #ebf8ed;
+    text-align: left;
+}
+
+h2 {
+    font-family: "Comfortaa", sans-serif;
+}
 
 .container-support {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
     flex-direction: column;
-    gap: 32px;
-    padding: 32px 16px;
+    gap: 24px;
     background: #ebf8ed;
+    align-items: flex-start;
+    align-items: center;
+    /* Центруємо весь контейнер по центру екрану */
+    padding-top: 32px;
+    /* базові відступи */
+}
+
+.support-container-part {
+    text-align: left;
+    width: 288px;
+    gap: 24px;
+    flex-direction: column;
+    display: flex;
 }
 
 .support-logo {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
-    letter-spacing: 0.01em;
     color: #030a06;
     font-family: "Comfortaa", sans-serif;
+    letter-spacing: 0.01em;
 }
 
 .support-text {
@@ -26,22 +43,207 @@
     color: #030a06;
 }
 
+/* Форма */
 .modal-form {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    /* центруємо форму для мобільних */
+    gap: 24px;
+    padding: 0;
 }
 
-.support-btn {
+/* Кожне поле */
+.form-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+/* Інпути і textarea однакової ширини */
+.modal-input,
+.modal-text-input {
+    width: 288px;
+    height: 42px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: inherit;
+    box-sizing: border-box;
+    background: rgba(3, 10, 6, 0.05);
+}
+
+.modal-text-input {
+    height: 180px;
+}
+
+.modal-input-label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #030a06;
+}
+
+.modal-input::placeholder,
+.modal-text-input::placeholder {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(3, 10, 6, 0.6);
+}
+
+.modal-form .submit-btn {
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
     color: #fff;
-    display: block;
-    text-align: center;
     border: 1px solid #030a06;
-    padding: 12px 0;
-    background: #030a06;
     border-radius: 6px;
-    padding: 12px 24px;
     width: 288px;
     height: 50px;
+    cursor: pointer;
+    background-color: #030a06;
+}
+
+/* Зображення */
+.form-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    width: 100%;
+}
+
+.form-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 40px;
+}
+
+
+
+/* Адаптив для планшета */
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+    .container-support {
+        align-items: flex-start;
+        /* Заголовок і текст по лівому краю */
+        text-align: left;
+        gap: 32px;
+        padding-top: 64px;
+        max-width: 1440px;
+    }
+
+    .support-container-part {
+        display: flex;
+        text-align: left;
+        width: 704px;
+        /* ширина текстового блоку */
+        max-width: 100%;
+        gap: 24px;
+        flex-direction: column;
+    }
+
+    .modal-form {
+        align-items: flex-start;
+        /* форма по лівому краю */
+        gap: 24px;
+    }
+
+    .modal-input,
+    .modal-text-input {
+        width: 704px;
+        /* ширина інпутів */
+    }
+
+    .modal-form .submit-btn {
+        width: 249px;
+        /* ширина кнопки */
+        height: 50px;
+        /* висота кнопки */
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 24px;
+        /* відстань між колонками */
+        width: auto;
+        /* або 1296px, якщо потрібно */
+        margin: 0 auto;
+        flex-wrap: nowrap;
+        /* не переносимо колонки */
+    }
+
+    .support.section {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 8px;
+        /* відстань між колонками */
+        margin: 0 auto;
+        flex-wrap: nowrap;
+        /* щоб не переносило на новий рядок */
+    }
+
+    .container-support {
+        width: 644px;
+        /* фіксована ширина лівого контейнера */
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        display: flex;
+        text-align: left;
+        padding-top: 0;
+    }
+
+    .modal-form {
+        width: 644px;
+        /* заповнює ширину контейнера */
+        align-items: flex-start;
+    }
+
+    .modal-input,
+    .modal-text-input {
+        width: 644px;
+        /* під ширину контейнера */
+    }
+
+    .form-image {
+        width: 644px;
+        /* ширина колонки фото */
+        flex-shrink: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0;
+    }
+
+    .form-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 40px;
+        object-fit: cover;
+    }
+
+
+    .support-container-part {
+        text-align: left;
+        /* ✅ вирівнювання по лівому краю */
+        width: 644px;
+        /* щоб тягнулося на весь контейнер */
+    }
+
+    .modal-form .submit-btn {
+        width: 100%;
+        /* 644px */
+        max-width: 198px;
+        /* можна обмежити максимум */
+        height: 50px;
+    }
 }
