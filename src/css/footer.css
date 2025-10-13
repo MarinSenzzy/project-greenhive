@@ -1,1 +1,134 @@
-.footer {}
+.footer-section {
+  padding: 48px 20px;
+  background-color: #75d281;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 48px;
+  /* padding-bottom: 48px; */
+}
+
+.footer-logo {
+  width: 100%;
+}
+
+.footer-nav {
+  width: 100%;
+}
+
+.footer-nav-menu {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #1c221e;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding-bottom: 48px;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(3, 10, 6, 0.15);
+}
+
+.footer-contacts-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-contacts-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #1c221e;
+}
+
+.footer-copyright {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #1c221e;
+
+  padding-bottom: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-section {
+    padding: 64px 32px;
+  }
+
+  .footer-container {
+    gap: 32px;
+  }
+
+  .footer-social {
+    padding-bottom: 24px;
+  }
+
+  .footer-logo {
+    width: 164px;
+  }
+
+  .footer-nav-menu {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .footer-social-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer-contacts {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-contacts-item {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .footer-section {
+    padding: 80px 64px;
+  }
+
+  .footer-container {
+    flex-wrap: nowrap;
+    padding-bottom: 52px;
+  }
+
+  .footer-social-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .footer-contacts {
+    gap: 16px;
+    padding-top: 16px;
+  }
+
+  .footer-contacts-item {
+    gap: 32px;
+  }
+}
