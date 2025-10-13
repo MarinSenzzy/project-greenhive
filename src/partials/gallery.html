@@ -1,58 +1,124 @@
-<section class="gallery">
-  <div class="container gallery-container">
-    <div class="gallery-text-container">
-      <h2 class="gallery-heading">Галерея зображень</h2>
-      <p class="gallery-paragraph">EcoTotes у повсякденному житті</p>
-    </div>
-    <div class="gallery-content-container">
-      <div class="gallery-container-img-1">
-        <img
-          class="gallery-img-1"
-          srcset="
-            ../img/gallery/1x/img-1.png    1x,
-            ../img/gallery/2x/img-1@2x.png 2x,
-            ../img/gallery/3x/img-1@3x.png 3x
-          "
-          src="../img/gallery/1x/img-1.png"
-          alt=" An eco tote placed on a chair or beside a table at a cozy coffee shop. There’s a cup of coffee, a book or a laptop nearby. The setting is minimal and aesthetic, evoking slow lifestyle and conscious choices."
-        />
-      </div>
-      <div class="gallery-container-img-2">
-        <img
-          class="gallery-img-2"
-          srcset="
-            ../img/gallery/1x/img-2.png    1x,
-            ../img/gallery/2x/img-2@2x.png 2x,
-            ../img/gallery/3x/img-2@3x.png 3x
-          "
-          src="../img/gallery/1x/img-2.png"
-          alt="A city scene where a stylish person carries a tote bag while crossing a street or standing at a crosswalk. Urban backdrop, bicycles, pedestrians, and modern architecture in the background. The bag is modern, clean, and fashionable."
-        />
-      </div>
-      <div class="gallery-container-img-3">
-        <img
-          class="gallery-img-3"
-          srcset="
-            ../img/gallery/1x/img-3.png    1x,
-            ../img/gallery/2x/img-3@2x.png 2x,
-            ../img/gallery/3x/img-3@3x.png 3x
-          "
-          src="../img/gallery/1x/img-3.png"
-          alt="A person walking through a park or nature trail carrying an eco-friendly tote bag on their shoulder. Casual outfit, spring or summer scenery, with trees, grass, and soft shadows. The bag moves naturally as part of the lifestyle moment."
-        />
-      </div>
-      <div class="gallery-container-img-4">
-        <img
-          class="gallery-img-4"
-          srcset="
-            ../img/gallery/1x/img-4.png    1x,
-            ../img/gallery/2x/img-4@2x.png 2x,
-            ../img/gallery/3x/img-4@3x.png 3x
-          "
-          src="../img/gallery/1x/img-4.png"
-          alt="A young woman holding a large eco tote bag filled with fresh vegetables and fruits at a local farmer's market. Warm sunlight, cozy atmosphere, background with wooden crates and greenery. The tote has a simple, natural design."
-        />
-      </div>
-    </div>
+<section class="sec-pad">
+  <div class="container">
+    <h2 class="gallery-heading">Галерея зображень</h2>
+    <p class="gallery-paragraph">EcoTotes у повсякденному житті</p>
+    <ul class="gallery-content-container">
+      <li class="gallery-container-img-1">
+        <picture>
+          <source
+            srcset="
+              /img/gallery/desktop/1x/img-1.png    1x,
+              /img/gallery/desktop/2x/img-1@2x.png 2x
+            "
+            media="(min-width: 1440px)"
+          />
+          <source
+            srcset="
+              /img/gallery/tablet/1x/img-1.png    1x,
+              /img/gallery/tablet/2x/img-1@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              /img/gallery/mobile/1x/img-1.png    1x,
+              /img/gallery/mobile/2x/img-1@2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            class="hero-img"
+            src="/img/gallery/desktop/1x/img-1.png"
+            alt="eco bags, in different colors, together with a bicycle on the street "
+          />
+        </picture>
+      </li>
+      <li class="gallery-container-img-2">
+        <picture>
+          <source
+            srcset="
+              /img/gallery/desktop/1x/img-2.png    1x,
+              /img/gallery/desktop/2x/img-2@2x.png 2x
+            "
+            media="(min-width: 1440px)"
+          />
+          <source
+            srcset="
+              /img/gallery/tablet/1x/img-2.png    1x,
+              /img/gallery/tablet/2x/img-2@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              /img/gallery/mobile/1x/img-2.png    1x,
+              /img/gallery/mobile/2x/img-2@2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img class="hero-img" src="/img/gallery/desktop/1x/img-2.png" />
+        </picture>
+      </li>
+      <li class="gallery-container-img-3">
+        <picture>
+          <source
+            srcset="
+              /img/gallery/desktop/1x/img-3.png    1x,
+              /img/gallery/desktop/2x/img-3@2x.png 2x
+            "
+            media="(min-width: 1440px)"
+          />
+          <source
+            srcset="
+              /img/gallery/tablet/1x/img-3.png    1x,
+              /img/gallery/tablet/2x/img-3@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              /img/gallery/mobile/1x/img-3.png    1x,
+              /img/gallery/mobile/2x/img-3@2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            class="hero-img"
+            src="/img/gallery/desktop/1x/img-3.png"
+            alt="Person walking in park with eco-friendly tote bag"
+          />
+        </picture>
+      </li>
+      <li class="gallery-container-img-4">
+        <picture>
+          <source
+            srcset="
+              /img/gallery/desktop/1x/img-4.png    1x,
+              /img/gallery/desktop/2x/img-4@2x.png 2x
+            "
+            media="(min-width: 1440px)"
+          />
+          <source
+            srcset="
+              /img/gallery/tablet/1x/img-4.png    1x,
+              /img/gallery/tablet/2x/img-4@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              /img/gallery/mobile/1x/img-4.png    1x,
+              /img/gallery/mobile/2x/img-4@2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            class="hero-img"
+            src="/img/gallery/desktop/1x/img-4.png"
+            alt="Woman with eco tote bag at farmer's market"
+          />
+        </picture>
+      </li>
+    </ul>
   </div>
 </section>
