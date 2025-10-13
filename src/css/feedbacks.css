@@ -9,7 +9,16 @@
   line-height: 1.2;
   letter-spacing: 0.01em;
   text-align: center;
-  color: var(--color-scheme-1-text);
+  color: #030a06;
+
+  margin-bottom: 32px;
+}
+
+.feedbacks-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  /* padding-bottom: 32px; */
 }
 
 .feedbacks-review {
@@ -18,9 +27,9 @@
   font-size: 20px;
   line-height: 1.4;
   letter-spacing: 0.01em;
-  color: var(--color-scheme-1-text);
+  color: #030a06;
 
-  padding-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 .feedbacks-people {
@@ -29,13 +38,13 @@
   line-height: 1.6;
   color: var(--color-scheme-1-text);
 
-  padding-bottom: 40px;
+  /* padding-bottom: 40px; */
 }
 
 .feedbacks-rating {
   display: flex;
   gap: 4px;
-  padding-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 .icon-star-fillled {
@@ -44,8 +53,6 @@
 
 @media only screen and (min-width: 768px) {
   .feedbacks-list {
-    display: flex;
-    flex-wrap: wrap;
     row-gap: 32px;
     column-gap: 24px;
   }
@@ -61,7 +68,7 @@
     line-height: 1.2;
     letter-spacing: 0.01em;
     text-align: center;
-    color: var(--color-scheme-1-text);
+    margin-bottom: 80px;
   }
 
   .feedbacks-list-item {
