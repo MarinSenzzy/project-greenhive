@@ -76,7 +76,7 @@ h2 {
 .modal-text-input::placeholder {
     font-size: 16px;
     line-height: 1.6;
-    font-family: inherit;
+    font-family: "Fira Sans", sans-serif;
 }
 
 .modal-text-input {
@@ -113,9 +113,8 @@ h2 {
 
 .modal-input::placeholder,
 .modal-text-input::placeholder {
-    font-family: "Fira Sans", sans-serif;
-    font-weight: 400;
     color: rgba(3, 10, 6, 0.6);
+    font-family: "Fira Sans", sans-serif;
 }
 
 .modal-form .submit-btn {
@@ -129,46 +128,67 @@ h2 {
     height: 50px;
     cursor: pointer;
     background-color: #030a06;
+    padding: 12px 0;
+
 }
 
 .submit-btn:hover,
 .submit-btn:focus {
-    background-color: rgba(3, 10, 6, 0.5);
-    color: #030A06;
-    border: 1px solid rgba(3, 10, 6, 0.5);
-    text-decoration: underline;
-    text-decoration-color: currentColor;
-    outline: none;
+    background: #030a06;
+    opacity: 0.5;
 }
 
 .submit-btn:active {
-    color: #3AC04C;
-    text-decoration: underline;
-    text-decoration-color: currentColor;
-    background-color: rgba(58, 192, 76, 0.6);
-    border: 1px solid rgba(58, 192, 76, 0.6);
+    background: #113916;
+    opacity: 0.6;
 }
 
 .submit-btn:disabled {
     background: #030a06;
     opacity: 0.2;
-    cursor: not-allowed;
-    text-decoration: none;
 }
 
 /* Зображення */
 .form-image {
-    display: flex;
-    justify-content: center;
+    width: 288px;
+    /* мобільний */
+    height: 180px;
     margin-top: 24px;
-    width: 100%;
-}
-
-.form-image img {
-    height: auto;
     border-radius: 40px;
+    background-image: url('../img/support/img-mob-1x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
 }
 
+/* Планшет */
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+    .form-image {
+        width: 704px;
+        height: 360px;
+        border-radius: 40px;
+        background-image: url('../img/support/img-tab-1x.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+}
+
+/* Десктоп */
+@media screen and (min-width: 1440px) {
+    .form-image {
+        width: 644px;
+        height: 767px;
+        border-radius: 40px;
+        background-image: url('../img/support/img-desk-1x.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: 0;
+    }
+}
 
 
 /* Адаптив для планшета */
@@ -218,6 +238,7 @@ h2 {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
+        align-items: stretch;
         gap: 24px;
         /* відстань між колонками */
         width: auto;
@@ -263,23 +284,6 @@ h2 {
     .modal-text-input {
         width: 644px;
         /* під ширину контейнера */
-    }
-
-    .form-image {
-        width: 644px;
-        /* ширина колонки фото */
-        flex-shrink: 0;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin: 0;
-    }
-
-    .form-image img {
-        width: 100%;
-        height: auto;
-        border-radius: 40px;
-        object-fit: cover;
     }
 
 
