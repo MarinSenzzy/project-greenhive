@@ -7,6 +7,7 @@ body {
   font-family: "Fira Sans", "Comfortaa", sans-serif;
   background: #ebf8ed;
   color: #030a06;
+  overflow-x: hidden;
 }
 
 main {

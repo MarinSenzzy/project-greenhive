@@ -80,6 +80,7 @@ h2 {
 }
 
 .modal-text-input {
+    resize: none;
     height: 180px;
     font-weight: 400;
 }
