@@ -91,30 +91,39 @@ h2 {
     outline: none;
 }
 
-/* Текст помилки */
-.text-invalid {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.6;
-    display: none;
-    color: #d64040;
-}
-
-
-.modal-input.invalid,
-.modal-text-input.invalid {
+/* Інпут при помилці */
+.modal-input:invalid:not(:placeholder-shown) {
     border: 1px solid #d64040;
-    /* червоний бордер при помилці */
+    /* червоний бордер */
 }
 
-.modal-input.invalid+.text-invalid {
+/* Текст помилки під час введення некоректного email */
+.modal-input:invalid:not(:placeholder-shown)~.text-invalid {
     display: block;
+    color: #d64040;
+    /* червоний текст */
+}
+
+/* При правильному введенні */
+.modal-input:valid {
+    border: 1px solid rgba(3, 10, 6, 0.15);
+    /* стандартний бордер */
+}
+
+.modal-input:valid~.text-invalid {
+    display: none;
 }
 
 .modal-input::placeholder,
 .modal-text-input::placeholder {
     color: rgba(3, 10, 6, 0.6);
     font-family: "Fira Sans", sans-serif;
+}
+
+.text-invalid {
+    font-size: 12px;
+    margin: 0;
+    display: none;
 }
 
 .modal-form .submit-btn {
