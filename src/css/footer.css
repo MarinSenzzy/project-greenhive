@@ -8,7 +8,6 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 48px;
-  /* padding-bottom: 48px; */
 }
 
 .footer-logo {
@@ -23,12 +22,45 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
-  color: #1c221e;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 32px;
+}
+
+.footer-nav-menu a {
+  color: #1c221e;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease, text-decoration-color 0.3s ease;
+}
+
+.footer-nav-menu a::after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #1c221e;
+
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.footer-nav-menu a:hover::after,
+.footer-nav-menu a:focus::after {
+  width: 100%;
+}
+
+.footer-nav-menu a:active {
+  color: #3ac04c;
+}
+
+.footer-nav-menu a:active::after {
+  background-color: #3ac04c;
+  width: 100%;
 }
 
 .footer-social {
@@ -61,6 +93,36 @@
   font-size: 16px;
   line-height: 1.6;
   color: #1c221e;
+
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.footer-contacts-text::after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #1c221e;
+
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.footer-contacts-text:hover::after,
+.footer-contacts-text:focus::after {
+  width: 100%;
+}
+
+.footer-contacts-text:active {
+  color: #3ac04c;
+}
+
+.footer-contacts-text:active::after {
+  background-color: #3ac04c;
+  width: 100%;
 }
 
 .footer-copyright {
@@ -134,11 +196,6 @@
     width: 24px;
     height: 24px;
   }
-  /* 
-  .footer-contacts {
-    gap: 16px;
-    padding-top: 16px;
-  } */
 
   .footer-contacts-item {
     gap: 32px;
