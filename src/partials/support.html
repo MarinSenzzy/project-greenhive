@@ -1,3 +1,54 @@
-<section>
-    <h2>support</h2>
+<section class="support section">
+    <div class="container">
+        <div class="container-support">
+            <div class="support-container-part">
+                <h2 class="support-logo">
+                    Залишились питання?<br>
+                    Зв'яжіться з нами!
+                </h2>
+                <p class="suppert-text">Ми тут, щоб допомогти!</p>
+            </div>
+            <form class="container modal-form">
+                <!-- Name -->
+                <div class="form-field">
+                    <label for="user-name" class="modal-input-label">Ім'я</label>
+                    <input type="text" class="modal-input" placeholder="Іван" name="user-name" id="user-name"
+                        required />
+                </div>
+
+                <!-- Email -->
+                <div class="form-field">
+                    <label for="user-email" class="modal-input-label">Електронна пошта</label>
+                    <input type="email" class="modal-input" placeholder="hello@ecotote.com" name="user-email"
+                        id="user-email" required />
+                </div>
+
+                <!-- Message -->
+                <div class="form-field">
+                    <label for="user-message" class="modal-input-label">Повідомлення</label>
+                    <textarea class="modal-text-input" placeholder="Введіть своє повідомлення..." name="user-message"
+                        id="user-message" rows="4"></textarea>
+                </div>
+                <!-- Submit -->
+                <button class="submit-btn">Надіслати</button>
+            </form>
+        </div>
+        <!-- Адаптивне зображення після кнопки -->
+        <picture class="form-image">
+            <!-- Мобільна версія -->
+            <source srcset="./img/support/img-mob-1x.jpg 1x, ./img/support/img-mob-2x.jpg 2x"
+                media="(max-width: 767px)">
+
+            <!-- Планшет -->
+            <source srcset="./img/support/img-tab-1x.jpg 1x, ./img/support/img-tab-2x.jpg 2x"
+                media="(min-width: 768px) and (max-width: 1439px)">
+
+            <!-- Десктоп -->
+            <source srcset="./img/support/img-desk-1x.jpg 1x, ./img/support/img-desk-2x.jpg 2x"
+                media="(min-width: 1440px)">
+
+            <!-- fallback -->
+            <img src="./img/support/img-desk-1x.jpg" alt="Support image" class="support-img">
+        </picture>
+    </div>
 </section>
