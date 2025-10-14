@@ -1,4 +1,4 @@
-.support {
+.support-section {
     background: #ebf8ed;
     text-align: left;
 }
@@ -274,7 +274,6 @@ h2 {
         align-items: stretch;
         gap: 24px;
         /* відстань між колонками */
-        width: auto;
         /* або 1296px, якщо потрібно */
         margin: 0 auto;
         flex-wrap: nowrap;
