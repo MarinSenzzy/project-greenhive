@@ -1,4 +1,4 @@
-.support {
+.support-section {
     background: #ebf8ed;
     text-align: left;
 }
@@ -98,7 +98,6 @@ h2 {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
-    background: rgba(3, 10, 6, 0.05);
 }
 
 .modal-input::placeholder,
@@ -197,20 +196,19 @@ h2 {
 
 @media screen and (min-width: 1440px) {
 
-    .container {
+    .container-support-wrap {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         gap: 24px;
         /* відстань між колонками */
-        width: auto;
         /* або 1296px, якщо потрібно */
         margin: 0 auto;
         flex-wrap: nowrap;
         /* не переносимо колонки */
     }
 
-    .support.section {
+    .support-section {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
