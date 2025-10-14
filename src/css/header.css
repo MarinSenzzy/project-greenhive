@@ -1,0 +1,139 @@
+.header {
+  background-color: #75d281;
+  height: 64px;
+  display: flex;
+  align-items: center;
+}
+.header-container {
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo img {
+  display: block;
+}
+.logo-menu {
+  display: none;
+}
+.menu-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.burger {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.nav-menu {
+  position: fixed;
+  inset: 0;
+  background-color: #75d281;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 32px;
+  padding: 32px 16px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.nav-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.nav-menu.is-open .logo-menu {
+  display: block;
+}
+.close {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.nav-links,
+.contacts ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.nav-links a,
+.contacts a {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #030a06;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding: 8px 0;
+}
+.nav-links a:hover,
+.nav-links a:focus,
+.contacts a:hover,
+.contacts a:focus {
+  color: #030a06;
+}
+.nav-links a:active,
+.contacts a:active {
+  color: #3ac04c;
+}
+@media (min-width: 768px) {
+  .header-container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+  .logo {
+    margin: 14px 0;
+  }
+  .burger {
+    margin: 20px 0;
+  }
+}
+@media (min-width: 1440px) {
+  .header {
+    height: 72px;
+  }
+  .header-container {
+    max-width: 1440px;
+    padding: 0 64px;
+  }
+  .burger,
+  .close {
+    display: none;
+  }
+  .nav-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    background: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    gap: 64px;
+  }
+  .nav-links {
+    flex-direction: row;
+    gap: 32px;
+  }
+  .contacts ul {
+    flex-direction: row;
+    gap: 24px;
+  }
+  .logo-menu {
+    display: none;
+  }
+}

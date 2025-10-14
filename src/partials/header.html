@@ -1,20 +1,29 @@
 <header class="header">
-  <div class="container header-container">
-    <a class="logo" href="/" aria-label="На головну">
-      <img src="../img/Company-Logo.svg" alt="EcoTote — логотип" />
+  <div class="header-container">
+    <a class="logo" href="/">
+      <img
+        src="../img/Company-Logo.svg"
+        alt="EcoTote — логотип"
+        width="84"
+        height="36"
+      />
     </a>
-    <button
-      class="burger"
-      type="button"
-      aria-label="Відкрити меню"
-      aria-controls="mobile-menu"
-      aria-expanded="false"
-    >
-      <svg class="burger-icon" width="32" height="32">
-        <use href="../img/sprite.svg#icon-menu"></use>
-      </svg>
-    </button>
-    <nav class="nav-desktop">
+    <div class="nav-menu">
+      <div class="menu-header">
+        <a class="logo-menu" href="/">
+          <img
+            src="../img/Company-Logo.svg"
+            alt="EcoTote — логотип"
+            width="84"
+            height="36"
+          />
+        </a>
+        <button class="close" type="button" aria-label="Закрити меню">
+          <svg class="close-icon" width="32" height="32">
+            <use href="img/sprite.svg#icon-x"></use>
+          </svg>
+        </button>
+      </div>
       <ul class="nav-links">
         <li><a href="#about">Про нас</a></li>
         <li><a href="#advantages">Переваги</a></li>
@@ -23,36 +32,17 @@
         <li><a href="#feedbacks">Відгуки</a></li>
         <li><a href="#contacts">Контакти</a></li>
       </ul>
-      <address>
-        <ul class="contacts">
+      <address class="contacts">
+        <ul>
           <li><a href="tel:+380999091122">+38 (099) 909 11 22</a></li>
           <li><a href="mailto:hello@ecotote.com">hello@ecotote.com</a></li>
         </ul>
       </address>
-    </nav>
+    </div>
+    <button class="burger" type="button" aria-label="Відкрити меню">
+      <svg class="burger-icon" width="32" height="32">
+        <use href="img/sprite.svg#icon-menu"></use>
+      </svg>
+    </button>
   </div>
 </header>
-<nav class="nav-mobile" id="mobile-menu">
-  <a class="logo" href="/" aria-label="На головну">
-    <img src="../img/Company-Logo.svg" alt="EcoTote — логотип" />
-  </a>
-  <button class="close" type="button" aria-label="Закрити меню">
-    <svg class="close-icon" width="32" height="32">
-      <use href="../img/sprite.svg#icon-x"></use>
-    </svg>
-  </button>
-  <ul class="nav-links">
-    <li><a href="#about">Про нас</a></li>
-    <li><a href="#advantages">Переваги</a></li>
-    <li><a href="#assortment">Асортимент</a></li>
-    <li><a href="#gallery">Галерея</a></li>
-    <li><a href="#feedbacks">Відгуки</a></li>
-    <li><a href="#contacts">Контакти</a></li>
-  </ul>
-  <address>
-    <ul class="contacts">
-      <li><a href="tel:+380999091122">+38 (099) 909 11 22</a></li>
-      <li><a href="mailto:hello@ecotote.com">hello@ecotote.com</a></li>
-    </ul>
-  </address>
-</nav>
