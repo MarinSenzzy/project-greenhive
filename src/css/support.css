@@ -12,11 +12,6 @@ h2 {
     flex-direction: column;
     gap: 24px;
     background: #ebf8ed;
-    align-items: flex-start;
-    align-items: center;
-    /* Центруємо весь контейнер по центру екрану */
-    padding-top: 32px;
-    /* базові відступи */
 }
 
 .support-container-part {
@@ -67,46 +62,68 @@ h2 {
     width: 288px;
     height: 42px;
     padding: 12px;
-    border: 1px solid #ccc;
     border-radius: 6px;
-    font-size: 16px;
-    font-family: inherit;
     box-sizing: border-box;
     background: rgba(3, 10, 6, 0.05);
+    border: 1px solid rgba(3, 10, 6, 0.15);
+    color: #030a06;
+}
+
+.modal-input,
+.modal-text-input,
+.modal-input-label,
+.modal-input::placeholder,
+.modal-text-input::placeholder {
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: "Fira Sans", sans-serif;
 }
 
 .modal-text-input {
     height: 180px;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #030a06;
 }
 
+.modal-input:hover,
 .modal-input:focus,
+.modal-text-input:hover,
 .modal-text-input:focus {
-    color: #030a06;
+    outline: none;
 }
 
+/* Інпут при помилці */
+.modal-input:invalid:not(:placeholder-shown) {
+    border: 1px solid #d64040;
+    /* червоний бордер */
+}
 
-.modal-input:invalid,
-.modal-text-input:invalid {
+/* Текст помилки під час введення некоректного email */
+.modal-input:invalid:not(:placeholder-shown)~.text-invalid {
+    display: block;
     color: #d64040;
+    /* червоний текст */
 }
 
-.modal-input-label {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.6;
+/* При правильному введенні */
+.modal-input:valid {
+    border: 1px solid rgba(3, 10, 6, 0.15);
+    /* стандартний бордер */
+}
+
+.modal-input:valid~.text-invalid {
+    display: none;
 }
 
 .modal-input::placeholder,
 .modal-text-input::placeholder {
-    font-family: "Fira Sans", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.6;
     color: rgba(3, 10, 6, 0.6);
+    font-family: "Fira Sans", sans-serif;
+}
+
+.text-invalid {
+    font-size: 12px;
+    margin: 0;
+    display: none;
 }
 
 .modal-form .submit-btn {
@@ -120,9 +137,13 @@ h2 {
     height: 50px;
     cursor: pointer;
     background-color: #030a06;
+    padding: 12px 0;
+    transition: opacity 0.3s ease;
+
 }
 
-.submit-btn:hover .submit-btn:focus {
+.submit-btn:hover,
+.submit-btn:focus {
     background: #030a06;
     opacity: 0.5;
 }
@@ -139,19 +160,69 @@ h2 {
 
 /* Зображення */
 .form-image {
-    display: flex;
-    justify-content: center;
+    width: 288px;
+    /* мобільний */
+    height: 180px;
     margin-top: 24px;
-    width: 100%;
-}
-
-.form-image img {
-    width: auto;
-    height: auto;
     border-radius: 40px;
+    background-image: url('../img/support/img-mob-1x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
 }
 
+/* Мобільний 2x */
+@media screen and (min-resolution: 2dppx),
+(-webkit-min-device-pixel-ratio: 2) {
+    .form-image {
+        background-image: url('../img/support/img-mob-2x.jpg');
+    }
+}
 
+/* Планшет */
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+    .form-image {
+        width: 704px;
+        height: 360px;
+        border-radius: 40px;
+        background-image: url('../img/support/img-tab-1x.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+}
+
+/* Планшет 2x */
+@media screen and (min-width: 768px) and (max-width: 1439px) and (min-resolution: 2dppx),
+(-webkit-min-device-pixel-ratio: 2) {
+    .form-image {
+        background-image: url('../img/support/img-tab-2x.jpg');
+    }
+}
+
+/* Десктоп */
+@media screen and (min-width: 1440px) {
+    .form-image {
+        width: 644px;
+        height: 767px;
+        border-radius: 40px;
+        background-image: url('../img/support/img-desk-1x.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: 0;
+    }
+}
+
+/* Десктоп 2x */
+@media screen and (min-width: 1440px) and (min-resolution: 2dppx),
+(-webkit-min-device-pixel-ratio: 2) {
+    .form-image {
+        background-image: url('../img/support/img-desk-2x.jpg');
+    }
+}
 
 /* Адаптив для планшета */
 @media screen and (min-width: 768px) and (max-width: 1439px) {
@@ -196,10 +267,11 @@ h2 {
 
 @media screen and (min-width: 1440px) {
 
-    .container-support-wrap {
+    .support-wrapper {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
+        align-items: stretch;
         gap: 24px;
         /* відстань між колонками */
         /* або 1296px, якщо потрібно */
@@ -208,7 +280,7 @@ h2 {
         /* не переносимо колонки */
     }
 
-    .support-section {
+    .support.sec-pad {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
@@ -217,6 +289,10 @@ h2 {
         margin: 0 auto;
         flex-wrap: nowrap;
         /* щоб не переносило на новий рядок */
+    }
+
+    .support-logo {
+        font-size: 48px;
     }
 
     .container-support {
@@ -240,23 +316,6 @@ h2 {
     .modal-text-input {
         width: 644px;
         /* під ширину контейнера */
-    }
-
-    .form-image {
-        width: 644px;
-        /* ширина колонки фото */
-        flex-shrink: 0;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin: 0;
-    }
-
-    .form-image img {
-        width: 100%;
-        height: auto;
-        border-radius: 40px;
-        object-fit: cover;
     }
 
 
