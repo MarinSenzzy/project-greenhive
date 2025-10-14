@@ -214,7 +214,7 @@ h2 {
 
 @media screen and (min-width: 1440px) {
 
-    .container {
+    .support-wrapper {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
