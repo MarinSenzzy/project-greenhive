@@ -138,6 +138,7 @@ h2 {
     cursor: pointer;
     background-color: #030a06;
     padding: 12px 0;
+    transition: opacity 0.3s ease;
 
 }
 
@@ -171,6 +172,14 @@ h2 {
     flex-shrink: 0;
 }
 
+/* Мобільний 2x */
+@media screen and (min-resolution: 2dppx),
+(-webkit-min-device-pixel-ratio: 2) {
+    .form-image {
+        background-image: url('../img/support/img-mob-2x.jpg');
+    }
+}
+
 /* Планшет */
 @media screen and (min-width: 768px) and (max-width: 1439px) {
     .form-image {
@@ -182,6 +191,14 @@ h2 {
         background-size: cover;
         background-repeat: no-repeat;
 
+    }
+}
+
+/* Планшет 2x */
+@media screen and (min-width: 768px) and (max-width: 1439px) and (min-resolution: 2dppx),
+(-webkit-min-device-pixel-ratio: 2) {
+    .form-image {
+        background-image: url('../img/support/img-tab-2x.jpg');
     }
 }
 
@@ -199,6 +216,13 @@ h2 {
     }
 }
 
+/* Десктоп 2x */
+@media screen and (min-width: 1440px) and (min-resolution: 2dppx),
+(-webkit-min-device-pixel-ratio: 2) {
+    .form-image {
+        background-image: url('../img/support/img-desk-2x.jpg');
+    }
+}
 
 /* Адаптив для планшета */
 @media screen and (min-width: 768px) and (max-width: 1439px) {
