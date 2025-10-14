@@ -12,11 +12,6 @@ h2 {
     flex-direction: column;
     gap: 24px;
     background: #ebf8ed;
-    align-items: flex-start;
-    align-items: center;
-    /* Центруємо весь контейнер по центру екрану */
-    padding-top: 32px;
-    /* базові відступи */
 }
 
 .support-container-part {
@@ -67,46 +62,59 @@ h2 {
     width: 288px;
     height: 42px;
     padding: 12px;
-    border: 1px solid #ccc;
     border-radius: 6px;
-    font-size: 16px;
-    font-family: inherit;
     box-sizing: border-box;
     background: rgba(3, 10, 6, 0.05);
+    border: 1px solid rgba(3, 10, 6, 0.15);
+    color: #030a06;
+}
+
+.modal-input,
+.modal-text-input,
+.modal-input-label,
+.modal-input::placeholder,
+.modal-text-input::placeholder {
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: inherit;
 }
 
 .modal-text-input {
     height: 180px;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #030a06;
 }
 
+.modal-input:hover,
 .modal-input:focus,
+.modal-text-input:hover,
 .modal-text-input:focus {
-    color: #030a06;
+    outline: none;
 }
 
-
-.modal-input:invalid,
-.modal-text-input:invalid {
+/* Текст помилки */
+.text-invalid {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.6;
+    display: none;
     color: #d64040;
 }
 
-.modal-input-label {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.6;
-    background: rgba(3, 10, 6, 0.05);
+
+.modal-input.invalid,
+.modal-text-input.invalid {
+    border: 1px solid #d64040;
+    /* червоний бордер при помилці */
+}
+
+.modal-input.invalid+.text-invalid {
+    display: block;
 }
 
 .modal-input::placeholder,
 .modal-text-input::placeholder {
     font-family: "Fira Sans", sans-serif;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.6;
     color: rgba(3, 10, 6, 0.6);
 }
 
@@ -123,19 +131,29 @@ h2 {
     background-color: #030a06;
 }
 
-.submit-btn:hover .submit-btn:focus {
-    background: #030a06;
-    opacity: 0.5;
+.submit-btn:hover,
+.submit-btn:focus {
+    background-color: rgba(3, 10, 6, 0.5);
+    color: #030A06;
+    border: 1px solid rgba(3, 10, 6, 0.5);
+    text-decoration: underline;
+    text-decoration-color: currentColor;
+    outline: none;
 }
 
 .submit-btn:active {
-    background: #113916;
-    opacity: 0.6;
+    color: #3AC04C;
+    text-decoration: underline;
+    text-decoration-color: currentColor;
+    background-color: rgba(58, 192, 76, 0.6);
+    border: 1px solid rgba(58, 192, 76, 0.6);
 }
 
 .submit-btn:disabled {
     background: #030a06;
     opacity: 0.2;
+    cursor: not-allowed;
+    text-decoration: none;
 }
 
 /* Зображення */
@@ -147,7 +165,6 @@ h2 {
 }
 
 .form-image img {
-    max-width: auto;
     height: auto;
     border-radius: 40px;
 }
@@ -210,7 +227,7 @@ h2 {
         /* не переносимо колонки */
     }
 
-    .support.section {
+    .support.sec-pad {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
@@ -219,6 +236,10 @@ h2 {
         margin: 0 auto;
         flex-wrap: nowrap;
         /* щоб не переносило на новий рядок */
+    }
+
+    .support-logo {
+        font-size: 48px;
     }
 
     .container-support {
