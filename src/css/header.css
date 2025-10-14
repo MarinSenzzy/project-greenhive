@@ -1,1 +1,318 @@
-.header {}
+/* ------HEADER -------- */
+
+.header {
+    background-color: #75d281;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    /* width: 107px; */
+    width: 84px;
+}
+
+.header-nav {
+    display: none;
+}
+
+.header-nav-list {
+    display: flex;
+    gap: 32px;
+}
+
+.header-nav-item {}
+
+.header-nav-link {
+    font-weight: 400;
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+    line-height: 1.6;
+    color: #030a06;
+    padding: 23px 0;
+    transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.header-nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #1c221e;
+    transition: width 0.2s ease, background-color 0.2s ease;
+}
+
+.header-nav-link:hover::after,
+.header-nav-link:focus::after {
+    width: 100%;
+
+}
+
+.header-nav-link:active {
+    color: #3ac04c;
+}
+
+.header-nav-link:active::after {
+    background-color: #3ac04c;
+    width: 100%;
+}
+
+
+
+
+.header-address {
+    display: none;
+}
+
+.header-address-list {
+    display: flex;
+    gap: 16px;
+}
+
+.header-address-item {}
+
+.header-address-link {
+    padding: 23px 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+    line-height: 1.6;
+    color: #030a06;
+    transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.header-address-link::after {
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #1c221e;
+    transition: width 0.2s ease, background-color 0.2s ease;
+}
+
+.header-address-link:hover::after,
+.header-address-link:focus::after {
+    width: 100%;
+
+}
+
+.header-address-link:active {
+    color: #3ac04c;
+}
+
+.header-address-link:active::after {
+    background-color: #3ac04c;
+    width: 100%;
+}
+
+.header-open {
+    border: none;
+    padding: 16px;
+    display: flex;
+    background-color: transparent;
+
+}
+
+.header-open-svg {
+    width: 32px;
+    height: 32px;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .header-open {
+
+        padding: 20px;
+
+    }
+
+    .header-open-svg {
+        width: 24px;
+        height: 24px;
+
+    }
+}
+
+
+@media only screen and (min-width: 1440px) {
+    .header-logo {
+        width: 107px;
+    }
+
+    .header-nav {
+        display: block;
+    }
+
+    .header-address {
+        display: block;
+    }
+
+    .header-open {
+        display: none;
+    }
+}
+
+
+
+
+
+/* ------MODAL-------- */
+.modal-menu {
+    background-color: #75d281;
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 250ms ease, visibility 250ms ease;
+}
+
+.modal-menu.is-open {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+.modal-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-close {
+    border: none;
+    padding: 16px;
+    display: flex;
+    background-color: transparent;
+
+}
+
+.modal-close-svg {
+    width: 32px;
+    height: 32px;
+}
+
+.modal-main {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.modal-nav {
+    padding: 32px 0;
+}
+
+.modal-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.modal-nav-item {}
+
+.modal-nav-link {
+    font-weight: 400;
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+    line-height: 1.6;
+    color: #030a06;
+    transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.modal-nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #1c221e;
+    transition: width 0.2s ease, background-color 0.2s ease;
+}
+
+.modal-nav-link:hover::after,
+.modal-nav-link:focus::after {
+    width: 100%;
+
+}
+
+.modal-nav-link:active {
+    color: #3ac04c;
+}
+
+.modal-nav-link:active::after {
+    background-color: #3ac04c;
+    width: 100%;
+}
+
+
+.modal-address {
+    padding-top: 32px;
+}
+
+.modal-address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.modal-address-item {}
+
+.modal-address-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+    line-height: 1.6;
+    color: #030a06;
+    transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+
+.modal-address-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #1c221e;
+    transition: width 0.2s ease, background-color 0.2s ease;
+}
+
+.modal-address-link:hover::after,
+.modal-address-link:focus::after {
+    width: 100%;
+
+}
+
+.modal-address-link:active {
+    color: #3ac04c;
+}
+
+.modal-address-link:active::after {
+    background-color: #3ac04c;
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .modal-main {
+        gap: 0;
+    }
+}
