@@ -15,7 +15,7 @@
     rel="stylesheet" />
 
   <script type="module" crossorigin src="/project-greenhive/index.js"></script>
-  <link rel="stylesheet" crossorigin href="/project-greenhive/assets/index-BXBTLpSl.css">
+  <link rel="stylesheet" crossorigin href="/project-greenhive/assets/index-vuDItt5a.css">
 </head>
 
 <body>
@@ -634,58 +634,51 @@
         </ul>
     </div>
 </section>
-    <section id="support" class="support-section sec-pad">
-    <div class="container container-support-wrap">
-        <div class="container-support">
-            <div class="support-container-part">
-                <h2 class="support-logo">
-                    Залишились питання?<br>
-                    Зв'яжіться з нами!
-                </h2>
-                <p class="suppert-text">Ми тут, щоб допомогти!</p>
+    <section id="support" class="support sec-pad">
+    <div class="container">
+        <div class="support-wrapper">
+            <div class="container-support">
+                <div class="support-container-part">
+                    <h2 class="support-logo">
+                        Залишились питання?<br>
+                        Зв'яжіться з нами!
+                    </h2>
+                    <p class="support-text">Ми тут, щоб допомогти!</p>
+                </div>
+
+                <form class="container modal-form" novalidate>
+                    <!-- Name -->
+                    <div class="form-field">
+                        <label for="user-name" class="modal-input-label">Імʼя</label>
+                        <input type="text" class="modal-input" id="user-name" name="user-name" placeholder="Іван"
+                            minlength="5" maxlength="64" required />
+                        <p class="text-invalid">Імʼя має бути від 5 до 64 символів</p>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-field">
+                        <label for="user-email" class="modal-input-label">Електронна пошта</label>
+                        <input type="email" class="modal-input" id="user-email" name="user-email"
+                            placeholder="hello@ecotote.com" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                            required />
+                        <p class="text-invalid">Error text</p>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="form-field">
+                        <label for="user-message" class="modal-input-label">Повідомлення</label>
+                        <textarea class="modal-text-input" id="user-message" name="user-message"
+                            placeholder="Введіть своє повідомлення..." maxlength="500" rows="4"></textarea>
+                    </div>
+
+                    <!-- Submit -->
+                    <button type="submit" class="submit-btn">Надіслати</button>
+                </form>
             </div>
-            <form class="container modal-form">
-                <!-- Name -->
-                <div class="form-field">
-                    <label for="user-name" class="modal-input-label">Ім'я</label>
-                    <input type="text" class="modal-input" placeholder="Іван" name="user-name" id="user-name"
-                        required />
-                </div>
 
-                <!-- Email -->
-                <div class="form-field">
-                    <label for="user-email" class="modal-input-label">Електронна пошта</label>
-                    <input type="email" class="modal-input" placeholder="hello@ecotote.com" name="user-email"
-                        id="user-email" required />
-                </div>
-
-                <!-- Message -->
-                <div class="form-field">
-                    <label for="user-message" class="modal-input-label">Повідомлення</label>
-                    <textarea class="modal-text-input" placeholder="Введіть своє повідомлення..." name="user-message"
-                        id="user-message" rows="4"></textarea>
-                </div>
-                <!-- Submit -->
-                <button class="submit-btn">Надіслати</button>
-            </form>
+            <!-- Зображення -->
+            <div class="form-image"></div> <!-- фон -->
         </div>
-        <!-- Адаптивне зображення після кнопки -->
-        <picture class="form-image">
-            <!-- Мобільна версія -->
-            <source srcset="/project-greenhive/assets/img-mob-1x-BkMvvf3f.jpg 1x, /project-greenhive/assets/img-mob-2x-DOatymBR.jpg 2x"
-                media="(max-width: 767px)">
-
-            <!-- Планшет -->
-            <source srcset="/project-greenhive/assets/img-tab-1x-nhFzD_3C.jpg 1x, /project-greenhive/assets/img-tab-2x-Cq11VfzA.jpg 2x"
-                media="(min-width: 768px) and (max-width: 1439px)">
-
-            <!-- Десктоп -->
-            <source srcset="/project-greenhive/assets/img-desk-1x-ClHFYpfI.jpg 1x, /project-greenhive/assets/img-desk-2x-DNJgCRY1.jpg 2x"
-                media="(min-width: 1440px)">
-
-            <!-- fallback -->
-            <img src="/project-greenhive/assets/img-desk-1x-ClHFYpfI.jpg" alt="Support image" class="support-img">
-        </picture>
     </div>
 </section>
   </main>
