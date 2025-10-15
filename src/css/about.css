@@ -3,17 +3,19 @@
   text-align: center;
   background-color: #000000;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url('../img/about/usegreencolor-mb.jpg');
+    url('../img/about/usegreencolor-mb.webp');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 @media screen and (min-resolution: 192dpi) {
   .about {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url('../img/about/usegreencolor-mb2x.jpg');
+      url('../img/about/usegreencolor-mb2x.webp');
   }
 }
+
 .about-title {
   font-family: 'Comfortaa', sans-serif;
   font-weight: 700;
@@ -23,6 +25,7 @@
   color: #ffffff;
   margin-bottom: 20px;
 }
+
 .about-subtitle {
   font-family: 'Fira Sans', sans-serif;
   font-weight: 400;
@@ -31,6 +34,7 @@
   color: #ffffff;
   margin-bottom: 12px;
 }
+
 .about-text {
   font-family: 'Fira Sans', sans-serif;
   font-weight: 400;
@@ -40,44 +44,52 @@
   max-width: 573px;
   margin: 0 auto;
 }
+
 @media screen and (min-width: 768px) {
   .about {
     padding: 80px 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url('../img/about/usegreencolor-tb.jpg');
+      url('../img/about/usegreencolor-tb.webp');
   }
+
   .about-title {
     font-size: 48px;
     margin-bottom: 24px;
   }
+
   .about-text {
     font-size: 18px;
   }
+
   .about-subtitle {
     margin-bottom: 16px;
   }
 }
+
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .about {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url('../img/about/usegreencolor-tb2x.jpg');
+      url('../img/about/usegreencolor-tb2x.webp');
   }
 }
+
 @media screen and (min-width: 1440px) {
   .about {
     padding: 112px 0 94px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url('../img/about/usegreencolor-dt.jpg');
+      url('../img/about/usegreencolor-dt.webp');
   }
+
   .about-title {
     font-size: 56px;
     max-width: 629px;
     margin: 0 auto 24px;
   }
 }
+
 @media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
   .about {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url('../img/about/usegreencolor-dt2x.jpg');
+      url('../img/about/usegreencolor-dt2x.webp');
   }
 }
