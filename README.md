@@ -75,13 +75,13 @@
 ## 👥 Робота над секціями
 > Брали участь у розробці проєкту, верстали секції, працювали над стилями, розробляли адаптивну верстку сайту та для секцій.
  ### Developer
-  * #### Нікіта Сидорович [requests header](https://github.com/MarinSenzzy/project-greenhive/pull/8), [commit hero section](https://github.com/MarinSenzzy/project-greenhive/commit/9ed3c105994e4649afb2e01ad78ed4ad1ad62e85), [commit hero section(fix)](https://github.com/MarinSenzzy/project-greenhive/commit/7ccfef068e8a8c7ae9596ab0c4bae18876c7ecda).
-  * #### Дар’я Єгорова [requests advantages](https://github.com/MarinSenzzy/project-greenhive/pull/3).
-  * #### Владислав Фітяк [requests gallery](https://github.com/MarinSenzzy/project-greenhive/pull/5).
-  * #### Анна [requests-1 support](https://github.com/MarinSenzzy/project-greenhive/pull/7), [requests-2 support](https://github.com/MarinSenzzy/project-greenhive/pull/9), [requests-3 support](https://github.com/MarinSenzzy/project-greenhive/pull/10).
-  * #### Дмитро Казаков [requests footer and feedback](https://github.com/MarinSenzzy/project-greenhive/pull/2).
-  * #### Елла [requests assortment](https://github.com/MarinSenzzy/project-greenhive/pull/4).
-  * #### Сергій Артамонов [requests about](https://github.com/MarinSenzzy/project-greenhive/pull/1).
+  * #### Нікіта Сидорович [requests-header](https://github.com/MarinSenzzy/project-greenhive/pull/8), [commit-hero-section](https://github.com/MarinSenzzy/project-greenhive/commit/9ed3c105994e4649afb2e01ad78ed4ad1ad62e85), [commit-hero-section(fix)](https://github.com/MarinSenzzy/project-greenhive/commit/7ccfef068e8a8c7ae9596ab0c4bae18876c7ecda).
+  * #### Дар’я Єгорова [requests-advantages](https://github.com/MarinSenzzy/project-greenhive/pull/3).
+  * #### Владислав Фітяк [requests-gallery](https://github.com/MarinSenzzy/project-greenhive/pull/5).
+  * #### Анна [requests-1-support](https://github.com/MarinSenzzy/project-greenhive/pull/7), [requests-2-support](https://github.com/MarinSenzzy/project-greenhive/pull/9), [requests-3-support](https://github.com/MarinSenzzy/project-greenhive/pull/10).
+  * #### Дмитро Казаков [requests-footer-and-feedback](https://github.com/MarinSenzzy/project-greenhive/pull/2).
+  * #### Елла [requests-assortment](https://github.com/MarinSenzzy/project-greenhive/pull/4).
+  * #### Сергій Артамонов [requests-about](https://github.com/MarinSenzzy/project-greenhive/pull/1).
 
 
 
